@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = ({ env }) => {
   return {
     ckeditor: {
       enabled: true,
@@ -314,10 +314,6 @@ module.exports = () => {
         }
       }
     },
-    "vercel-deploy": {
-      enabled: true,
-    },
-    ckeditor: true,
     upload: {
       config: {
         provider: 'cloudinary',
@@ -332,10 +328,6 @@ module.exports = () => {
         },
       },
     },
+
   }
 }
-
-module.exports = ({ env }) => ({
-
-
-});
